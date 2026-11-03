@@ -23,7 +23,7 @@ int[] resizeAt(int[] array, int index){
     }
 
 }
-
+// einfach ein such algorithmus( siehe Searching)
 int position(int[]array, value){ // geht auch besser( such algorithmen), z.B. in mitte, größer kleiner vergleichen(binearisearch), hier simple search
 	int i = 0;
 	while(array[i] < value){
