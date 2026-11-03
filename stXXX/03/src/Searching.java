@@ -8,17 +8,18 @@ int naiveSearch(int[] array, int value) {
 int binarySearch(int[] array, int value) { 
 	int begin = 0;
 	int end = array.length
-	for(){
+	while(behin <= end){
 		int mid = (end - begin)/2;
-		if(array[mid] != value){
-			return -1;
+		if(array[mid] < value){
+				begin = mid + 1;
 		}
-		else if(array[mid] < value){
-			begin = mid;
+		else if(array[mid] > value){
+			end = mid - 1;
 		}
 		else{
-			end = mid;
+			return mid;
 		}
+		return -1;
 	}
 }
 
