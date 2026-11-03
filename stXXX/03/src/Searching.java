@@ -1,7 +1,14 @@
 import InsertSorted as Is
 
 int naiveSearch(int[] array, int value) { 
-	Is.position(int[] array, int value);
+	i = 0;
+	while(array != value){
+		i++;
+		if(i = array.length){
+			return -1;
+		}
+	}
+return i;
 }
 
 
@@ -48,18 +55,5 @@ int numBinaryComparisons(int[] array, int value){
 
 
 int numNaiveComparisons(int[] array, int value){
-/*
-	int i = 0;
-	int com = 0;
-	while(array[i] < value){
-		com++;
-		i++;
-		if(array[i] = value){
-			return com + 1; // oder -1, da nicht gefunden
-		}
-	}
-return com
-}
-*/
-return naiveSearch(array, value) *2 // da genau zwei vergleich pro position 
+return naiveSearch(array, value)  // da genau ein vergleich pro durchgang
 }
